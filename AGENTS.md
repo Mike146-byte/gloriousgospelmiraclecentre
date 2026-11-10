@@ -28,3 +28,5 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+The church's public website keeps its vision, mission, declaration, and scripture foundation on one homepage because this supplied content forms a single cohesive introduction.
