@@ -1,23 +1,194 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { Link, createFileRoute } from "@tanstack/react-router";
+import { ArrowDown, ArrowUpRight, BookOpen, Globe2, HeartHandshake } from "lucide-react";
 
-// The home route ships no og:image, so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+import { Button } from "@/components/ui/button";
+import worshipGathering from "@/assets/worship-gathering.jpg";
+
+const scriptures = [
+  { reference: "Obadiah 1:17", theme: "Deliverance, holiness & restoration" },
+  { reference: "Isaiah 42:22", theme: "Freedom for those in captivity" },
+  { reference: "Matthew 28:19–20", theme: "Making disciples of all nations" },
+  { reference: "Acts 1:8", theme: "Spirit-empowered witnesses" },
+  { reference: "Hebrews 12:14", theme: "Pursuing holiness" },
+  { reference: "Habakkuk 2:14", theme: "The glory of the Lord filling the earth" },
+];
+
 export const Route = createFileRoute("/")({
-  component: Index,
+  head: () => ({
+    meta: [
+      { title: "Glorious Gospel Miracle Centre | Home of True Worship" },
+      {
+        name: "description",
+        content:
+          "Glorious Gospel Miracle Centre is rooted in the Word, established in holiness, and empowered by the Holy Spirit to proclaim the Gospel and see lives restored.",
+      },
+      { property: "og:title", content: "Glorious Gospel Miracle Centre" },
+      {
+        property: "og:description",
+        content: "Rooted in the Word. Established in Holiness. Empowered by the Holy Spirit.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
+  component: HomePage,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
+function HomePage() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="church-site">
+      <header className="site-header">
+        <Link className="brand-lockup" to="/" aria-label="Glorious Gospel Miracle Centre home">
+          <span className="brand-monogram">G.G.M.C.</span>
+          <span className="brand-caption">Home of True Worship</span>
+        </Link>
+        <nav className="main-nav" aria-label="Main navigation">
+          <a href="#vision">Vision</a>
+          <a href="#mission">Mission</a>
+          <a href="#scripture">Scripture</a>
+        </nav>
+      </header>
+
+      <main>
+        <section className="home-hero" aria-labelledby="welcome-heading">
+          <img
+            className="hero-photo"
+            src={worshipGathering}
+            alt="A congregation gathered in worship beneath a cross"
+            width={1600}
+            height={1056}
+            fetchPriority="high"
+          />
+          <div className="hero-scrim" />
+          <div className="hero-content">
+            <p className="eyebrow hero-eyebrow">Glorious Gospel Miracle Centre</p>
+            <h1 id="welcome-heading">Rooted in the Word.<br />Sent to the nations.</h1>
+            <p className="hero-intro">
+              A home for true worship, where lives encounter the transforming power of Jesus
+              Christ.
+            </p>
+            <div className="hero-actions">
+              <Button asChild size="lg" className="hero-button">
+                <a href="#vision">
+                  Discover our heart <ArrowUpRight aria-hidden="true" />
+                </a>
+              </Button>
+              <a className="hero-text-link" href="#scripture">
+                Explore our foundation
+              </a>
+            </div>
+          </div>
+          <a className="scroll-cue" href="#vision" aria-label="Scroll to our vision">
+            <ArrowDown aria-hidden="true" />
+          </a>
+          <span className="hero-index" aria-hidden="true">01 / 04</span>
+        </section>
+
+        <section className="mandate-section" id="vision" aria-labelledby="mandate-heading">
+          <div className="section-heading">
+            <p className="eyebrow">Our heart &amp; calling</p>
+            <h2 id="mandate-heading">A ministry with a mandate.</h2>
+            <p>
+              We exist to establish God’s Word, see lives restored, and carry the Gospel of Jesus
+              Christ wherever He sends us.
+            </p>
+          </div>
+
+          <div className="mandate-grid">
+            <article className="mandate-card vision-card">
+              <div className="card-topline">
+                <span className="card-number">01</span>
+                <span className="card-kicker">The vision</span>
+              </div>
+              <h3>For lives to be restored—and the Gospel to reach the nations.</h3>
+              <p>
+                To be a divinely established global ministry, rooted in God’s Word and established
+                in holiness. A ministry through which His power is manifested, lives are delivered
+                and restored, and the Gospel transforms individuals, communities, nations, and
+                continents for His glory.
+              </p>
+              <Globe2 className="card-watermark" aria-hidden="true" />
+            </article>
+
+            <article className="mandate-card motto-card">
+              <div className="motto-mark" aria-hidden="true">“</div>
+              <p className="card-kicker">Our ministry motto</p>
+              <h3>Rooted in the Word.<br />Established in Holiness.<br />Empowered by the Holy Spirit.<br />Sent to the Nations.</h3>
+              <span className="motto-rule" />
+            </article>
+
+            <article className="mandate-card mission-card" id="mission">
+              <div className="card-topline">
+                <span className="card-number">02</span>
+                <span className="card-kicker">The mission</span>
+              </div>
+              <h3>Proclaim truth. Cultivate worship. Demonstrate His power.</h3>
+              <p>
+                We preach the uncompromised Word of God and cultivate a life of prayer, true worship,
+                and holiness. Through the Gospel and the power of the Holy Spirit, we proclaim
+                liberty, minister deliverance and restoration, raise believers to spiritual
+                maturity, and carry this mandate wherever God sends us.
+              </p>
+              <div className="mission-signature">
+                <HeartHandshake aria-hidden="true" />
+                <span>For individuals, families, communities &amp; nations</span>
+              </div>
+            </article>
+
+            <article className="mandate-card declaration-card">
+              <div className="card-topline">
+                <span className="card-number">03</span>
+                <span className="card-kicker">Our declaration</span>
+              </div>
+              <h3>An altar of true worship. An instrument of His power.</h3>
+              <p>
+                We are committed to proclaiming Jesus Christ faithfully, walking in holiness, and
+                ministering in the power of the Holy Spirit. Our desire is to see every life
+                encounter God’s truth, experience His transforming work, and fulfil His purpose.
+              </p>
+              <p className="declaration-close">All for the glory of Jesus Christ.</p>
+            </article>
+          </div>
+        </section>
+
+        <section className="scripture-section" id="scripture" aria-labelledby="scripture-heading">
+          <div className="scripture-intro">
+            <div className="scripture-icon"><BookOpen aria-hidden="true" /></div>
+            <p className="eyebrow">Our scriptural foundation</p>
+            <h2 id="scripture-heading">Built on the Word.</h2>
+            <p>These scriptures shape our calling, our character, and the hope we carry.</p>
+          </div>
+          <ol className="scripture-list">
+            {scriptures.map((scripture, index) => (
+              <li key={scripture.reference}>
+                <span className="scripture-number">0{index + 1}</span>
+                <div>
+                  <h3>{scripture.reference}</h3>
+                  <p>{scripture.theme}</p>
+                </div>
+                <ArrowUpRight className="scripture-arrow" aria-hidden="true" />
+              </li>
+            ))}
+          </ol>
+        </section>
+
+        <section className="closing-section" aria-labelledby="closing-heading">
+          <p className="eyebrow">Glorious Gospel Miracle Centre · G.G.M.C.</p>
+          <h2 id="closing-heading">The earth will be filled with the knowledge of the glory of the Lord.</h2>
+          <p className="closing-reference">Habakkuk 2:14</p>
+          <Button asChild variant="outline" size="lg" className="closing-button">
+            <a href="#welcome-heading">
+              Back to the beginning <ArrowUpRight aria-hidden="true" />
+            </a>
+          </Button>
+        </section>
+      </main>
+
+      <footer className="site-footer">
+        <Link className="footer-brand" to="/">G.G.M.C.</Link>
+        <p>Rooted in the Word. Established in Holiness.</p>
+        <a href="#welcome-heading">Home <ArrowUpRight aria-hidden="true" /></a>
+      </footer>
     </div>
   );
 }
