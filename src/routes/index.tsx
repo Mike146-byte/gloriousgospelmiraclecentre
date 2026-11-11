@@ -3,6 +3,7 @@ import { ArrowDown, ArrowUpRight, BookOpen, Globe2, HeartHandshake } from "lucid
 
 import { Button } from "@/components/ui/button";
 import worshipGathering from "@/assets/worship-gathering.jpg";
+import pastorsPortrait from "@/assets/pastors-vincent.jpg.asset.json";
 
 const scriptures = [
   { reference: "Obadiah 1:17", theme: "Deliverance, holiness & restoration" },
@@ -45,6 +46,7 @@ function HomePage() {
         <nav className="main-nav" aria-label="Main navigation">
           <a href="#vision">Vision</a>
           <a href="#mission">Mission</a>
+          <a href="#pastors">Pastors</a>
           <a href="#scripture">Scripture</a>
         </nav>
       </header>
@@ -151,6 +153,36 @@ function HomePage() {
               </p>
               <p className="declaration-close">All for the glory of Jesus Christ.</p>
             </article>
+          </div>
+        </section>
+
+        <section className="pastors-section" id="pastors" aria-labelledby="pastors-heading">
+          <div className="pastors-portrait-wrap">
+            <img
+              className="pastors-portrait"
+              src={pastorsPortrait.url}
+              alt="Rev. Vincent Lukalia and Pastor Mercy Vincent"
+              width={1366}
+              height={1024}
+              loading="lazy"
+            />
+          </div>
+          <div className="pastors-content">
+            <p className="eyebrow">Our pastors</p>
+            <h2 id="pastors-heading">Meet the pastors</h2>
+            <p className="pastors-intro">
+              Serving the Glorious Gospel Miracle Centre and its congregation.
+            </p>
+            <div className="pastor-names">
+              <div>
+                <span className="pastor-role">Host Pastor</span>
+                <h3>Rev. Vincent Lukalia</h3>
+              </div>
+              <div>
+                <span className="pastor-role">Pastor</span>
+                <h3>Mercy Vincent</h3>
+              </div>
+            </div>
           </div>
         </section>
 

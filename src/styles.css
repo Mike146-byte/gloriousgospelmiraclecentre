@@ -576,6 +576,78 @@
   font-size: 19px;
 }
 
+.pastors-section {
+  display: grid;
+  width: min(100%, 1160px);
+  margin-inline: auto;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  align-items: center;
+  gap: clamp(38px, 7vw, 92px);
+  padding: 88px 24px 96px;
+}
+
+.pastors-portrait-wrap {
+  overflow: hidden;
+  border: 1px solid oklch(0.45 0.06 236 / 14%);
+  background: var(--church-mist);
+}
+
+.pastors-portrait {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center 38%;
+}
+
+.pastors-content h2 {
+  margin: 13px 0 12px;
+  color: var(--church-ink);
+  font-family: var(--font-display);
+  font-size: clamp(38px, 4.5vw, 56px);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.pastors-intro {
+  max-width: 390px;
+  margin: 0;
+  color: var(--muted-foreground);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.pastor-names {
+  display: grid;
+  margin-top: 32px;
+  border-top: 1px solid var(--border);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.pastor-names > div {
+  padding: 19px 16px 0 0;
+}
+
+.pastor-names > div + div {
+  padding-left: 18px;
+  border-left: 1px solid var(--border);
+}
+
+.pastor-role {
+  color: var(--church-blue);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.pastor-names h3 {
+  margin: 8px 0 0;
+  color: var(--church-ink);
+  font-family: var(--font-display);
+  font-size: clamp(19px, 2vw, 24px);
+  font-weight: 400;
+  line-height: 1.25;
+}
+
 .scripture-section {
   position: relative;
   isolation: isolate;
@@ -885,6 +957,36 @@
     align-items: flex-start;
     font-size: 11px;
     line-height: 1.55;
+  }
+
+  .pastors-section {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 27px;
+    padding: 64px 22px 70px;
+  }
+
+  .pastors-portrait {
+    aspect-ratio: 4 / 3;
+  }
+
+  .pastors-content h2 {
+    font-size: 39px;
+  }
+
+  .pastors-intro {
+    font-size: 14px;
+  }
+
+  .pastor-names {
+    margin-top: 24px;
+  }
+
+  .pastor-names > div {
+    padding-top: 15px;
+  }
+
+  .pastor-names h3 {
+    font-size: 20px;
   }
 
   .scripture-section {
