@@ -85,6 +85,9 @@ function HomePage() {
         </section>
 
         <section className="mandate-section" id="vision" aria-labelledby="mandate-heading">
+          <div className="ambient-background" aria-hidden="true">
+            <img src={worshipGathering} alt="" />
+          </div>
           <div className="section-heading">
             <p className="eyebrow">Our heart &amp; calling</p>
             <h2 id="mandate-heading">A ministry with a mandate.</h2>
@@ -152,6 +155,9 @@ function HomePage() {
         </section>
 
         <section className="scripture-section" id="scripture" aria-labelledby="scripture-heading">
+          <div className="ambient-background" aria-hidden="true">
+            <img src={worshipGathering} alt="" />
+          </div>
           <div className="scripture-intro">
             <div className="scripture-icon"><BookOpen aria-hidden="true" /></div>
             <p className="eyebrow">Our scriptural foundation</p>
@@ -173,6 +179,9 @@ function HomePage() {
         </section>
 
         <section className="closing-section" aria-labelledby="closing-heading">
+          <div className="ambient-background" aria-hidden="true">
+            <img src={worshipGathering} alt="" />
+          </div>
           <p className="eyebrow">Glorious Gospel Miracle Centre · G.G.M.C.</p>
           <h2 id="closing-heading">The earth will be filled with the knowledge of the glory of the Lord.</h2>
           <p className="closing-reference">Habakkuk 2:14</p>
