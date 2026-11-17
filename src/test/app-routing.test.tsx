@@ -22,7 +22,7 @@ describe("App routing", () => {
 
   it("shows the supplied church location landmark", () => {
     expect(visitorDetails.location).toBe(
-      "Blue Ribbon, between Kiganjo Corner 1 and Kamenu, Thika Makongeni",
+      "Blue Ribbon, between Kiganjo Corner and Makongeni Kamenu",
     );
   });
 });
