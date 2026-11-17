@@ -1,5 +1,5 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
-import { ArrowDown, ArrowUpRight, BookOpen, Globe2, HeartHandshake } from "lucide-react";
+import { ArrowDown, ArrowUpRight, BookOpen, Clock3, Globe2, HeartHandshake, MapPin, Navigation } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import worshipGathering from "@/assets/worship-gathering.jpg";
@@ -13,6 +13,11 @@ const scriptures = [
   { reference: "Hebrews 12:14", theme: "Pursuing holiness" },
   { reference: "Habakkuk 2:14", theme: "The glory of the Lord filling the earth" },
 ];
+
+export const visitorDetails = {
+  serviceTime: "Sundays, 7:00 a.m.–1:00 p.m.",
+  location: "Blue Ribbon, between Kiganjo Corner 1 and Kamenu, Thika Makongeni",
+};
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -47,6 +52,7 @@ function HomePage() {
           <a href="#vision">Vision</a>
           <a href="#mission">Mission</a>
           <a href="#pastors">Pastors</a>
+          <a href="#visit">Visit</a>
           <a href="#scripture">Scripture</a>
         </nav>
       </header>
@@ -177,11 +183,54 @@ function HomePage() {
               <div>
                 <span className="pastor-role">Host Pastor</span>
                 <h3>Rev. Vincent Lukalia</h3>
+                <p className="pastor-bio">
+                  Serves Glorious Gospel Miracle Centre as its Host Pastor and ministers to the
+                  congregation.
+                </p>
               </div>
               <div>
                 <span className="pastor-role">Pastor</span>
                 <h3>Mercy Vincent</h3>
+                <p className="pastor-bio">
+                  Serves as a Pastor at Glorious Gospel Miracle Centre, serving the church and its
+                  congregation.
+                </p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="visit-section" id="visit" aria-labelledby="visit-heading">
+          <div className="visit-inner">
+            <div className="visit-heading">
+              <p className="eyebrow">Plan your visit</p>
+              <h2 id="visit-heading">We’d love to welcome you.</h2>
+            </div>
+            <div className="visit-details">
+              <article className="visit-detail">
+                <Clock3 aria-hidden="true" />
+                <div>
+                  <h3>Sunday service</h3>
+                  <p>{visitorDetails.serviceTime}</p>
+                </div>
+              </article>
+              <article className="visit-detail">
+                <MapPin aria-hidden="true" />
+                <div>
+                  <h3>Where to find us</h3>
+                  <p>{visitorDetails.location}</p>
+                </div>
+              </article>
+              <a
+                className="directions-link"
+                href="https://www.google.com/maps/dir/?api=1&destination=Blue%20Ribbon%2C%20between%20Kiganjo%20Corner%201%20and%20Kamenu%2C%20Thika%20Makongeni"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Navigation aria-hidden="true" />
+                Get directions
+                <ArrowUpRight aria-hidden="true" />
+              </a>
             </div>
           </div>
         </section>

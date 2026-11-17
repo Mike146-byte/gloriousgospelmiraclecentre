@@ -648,6 +648,96 @@
   line-height: 1.25;
 }
 
+.pastor-bio {
+  margin: 10px 0 0;
+  color: var(--muted-foreground);
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.visit-section {
+  background: var(--church-ink);
+  color: var(--church-deep-foreground);
+  scroll-margin-top: 20px;
+}
+
+.visit-inner {
+  display: grid;
+  width: min(100% - 48px, 1160px);
+  margin-inline: auto;
+  grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.2fr);
+  align-items: center;
+  gap: clamp(36px, 8vw, 100px);
+  padding-block: 62px;
+}
+
+.visit-heading h2 {
+  max-width: 420px;
+  margin: 13px 0 0;
+  font-family: var(--font-display);
+  font-size: clamp(34px, 4.2vw, 48px);
+  font-weight: 400;
+  line-height: 1.12;
+}
+
+.visit-details {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 22px 28px;
+}
+
+.visit-detail {
+  display: flex;
+  min-width: 0;
+  align-items: flex-start;
+  gap: 13px;
+}
+
+.visit-detail > svg {
+  width: 19px;
+  flex: 0 0 auto;
+  margin-top: 2px;
+  color: var(--church-teal);
+}
+
+.visit-detail h3 {
+  margin: 0;
+  color: var(--church-deep-foreground);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.visit-detail p {
+  margin: 5px 0 0;
+  color: oklch(0.84 0.022 217);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.directions-link {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border: 1px solid oklch(0.69 0.091 205 / 55%);
+  padding-inline: 14px;
+  color: var(--church-deep-foreground);
+  font-size: 12px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 160ms ease;
+}
+
+.directions-link:hover {
+  background: oklch(0.69 0.091 205 / 14%);
+}
+
+.directions-link svg {
+  width: 15px;
+}
+
 .scripture-section {
   position: relative;
   isolation: isolate;
@@ -973,6 +1063,10 @@
     font-size: 39px;
   }
 
+  .pastor-bio {
+    font-size: 12px;
+  }
+
   .pastors-intro {
     font-size: 14px;
   }
@@ -987,6 +1081,26 @@
 
   .pastor-names h3 {
     font-size: 20px;
+  }
+
+  .visit-inner {
+    width: auto;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+    padding: 54px 22px;
+  }
+
+  .visit-heading h2 {
+    font-size: 38px;
+  }
+
+  .visit-details {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  .directions-link {
+    justify-self: start;
   }
 
   .scripture-section {
