@@ -51,6 +51,7 @@ function HomePage() {
         <nav className="main-nav" aria-label="Main navigation">
           <a href="#vision">Vision</a>
           <a href="#mission">Mission</a>
+          <a href="#history">Our story</a>
           <a href="#pastors">Pastors</a>
           <a href="#visit">Visit</a>
           <a href="#scripture">Scripture</a>
@@ -159,6 +160,48 @@ function HomePage() {
               </p>
               <p className="declaration-close">All for the glory of Jesus Christ.</p>
             </article>
+          </div>
+        </section>
+
+        <section className="history-section" id="history" aria-labelledby="history-heading">
+          <div className="history-inner">
+            <div className="history-copy">
+              <p className="eyebrow">Our story</p>
+              <h2 id="history-heading">Rooted in the Word. Called to restore lives.</h2>
+              <p>
+                Glorious Gospel Miracle Centre is a home for true worship, rooted in God’s Word and
+                established in holiness. Its calling is to proclaim the Gospel, cultivate prayer and
+                worship, and serve through the power of the Holy Spirit.
+              </p>
+              <p>
+                The church’s vision reaches beyond its congregation: to see lives delivered and
+                restored, communities transformed, and the Gospel carried to nations for the glory
+                of Jesus Christ.
+              </p>
+            </div>
+            <div className="history-foundation" aria-label="The church’s faith and calling">
+              <article className="history-point">
+                <span className="history-number">01</span>
+                <div>
+                  <h3>The foundation</h3>
+                  <p>God’s Word, holiness, prayer, and true worship.</p>
+                </div>
+              </article>
+              <article className="history-point">
+                <span className="history-number">02</span>
+                <div>
+                  <h3>The calling</h3>
+                  <p>Proclaim the Gospel and minister deliverance and restoration.</p>
+                </div>
+              </article>
+              <article className="history-point">
+                <span className="history-number">03</span>
+                <div>
+                  <h3>The hope</h3>
+                  <p>Lives and nations transformed for the glory of Jesus Christ.</p>
+                </div>
+              </article>
+            </div>
           </div>
         </section>
 

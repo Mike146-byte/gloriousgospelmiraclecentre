@@ -1,3 +1,4 @@
 - [x] Add the supplied Sunday service time and Blue Ribbon location with directions.
 - [x] Add role-based pastor biographies using only confirmed church information.
+- [x] Add the church's story from its confirmed vision, mission, and faith foundation.
 - [ ] Add personal ministry histories and areas of service when the church provides details.

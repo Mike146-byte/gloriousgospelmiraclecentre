@@ -655,6 +655,76 @@
   line-height: 1.65;
 }
 
+.history-section {
+  border-block: 1px solid var(--border);
+  background: var(--church-white);
+}
+
+.history-inner {
+  display: grid;
+  width: min(100%, 1160px);
+  margin-inline: auto;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: clamp(40px, 8vw, 112px);
+  padding: 86px 24px 92px;
+}
+
+.history-copy h2 {
+  max-width: 510px;
+  margin: 13px 0 18px;
+  color: var(--church-ink);
+  font-family: var(--font-display);
+  font-size: clamp(38px, 4.3vw, 54px);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.history-copy > p:not(.eyebrow) {
+  max-width: 510px;
+  margin: 0 0 13px;
+  color: var(--muted-foreground);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.history-foundation {
+  border-top: 1px solid var(--border);
+}
+
+.history-point {
+  display: grid;
+  min-height: 98px;
+  grid-template-columns: 42px minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid var(--border);
+  padding-block: 17px;
+}
+
+.history-number {
+  align-self: start;
+  padding-top: 3px;
+  color: var(--church-teal);
+  font-family: var(--font-display);
+  font-size: 17px;
+}
+
+.history-point h3 {
+  margin: 0;
+  color: var(--church-ink);
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.history-point p {
+  margin: 4px 0 0;
+  color: var(--muted-foreground);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
 .visit-section {
   background: var(--church-ink);
   color: var(--church-deep-foreground);
@@ -1069,6 +1139,24 @@
 
   .pastors-intro {
     font-size: 14px;
+  }
+
+  .history-inner {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+    padding: 64px 22px 70px;
+  }
+
+  .history-copy h2 {
+    font-size: 39px;
+  }
+
+  .history-copy > p:not(.eyebrow) {
+    font-size: 13px;
+  }
+
+  .history-point {
+    min-height: 88px;
   }
 
   .pastor-names {
