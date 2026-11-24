@@ -45,7 +45,7 @@ function HomePage() {
     <div className="church-site">
       <header className="site-header">
         <Link className="brand-lockup" to="/" aria-label="Glorious Gospel Miracle Centre home">
-          <span className="brand-monogram">G.G.M.C.</span>
+          <span className="brand-monogram">Glorious Gospel Miracle Centre</span>
           <span className="brand-caption">Home of True Worship</span>
         </Link>
         <nav className="main-nav" aria-label="Main navigation">
@@ -54,6 +54,7 @@ function HomePage() {
           <a href="#history">Our story</a>
           <a href="#pastors">Pastors</a>
           <a href="#visit">Visit</a>
+          <Link to="/events">Events</Link>
           <a href="#scripture">Scripture</a>
         </nav>
       </header>
@@ -70,7 +71,7 @@ function HomePage() {
           />
           <div className="hero-scrim" />
           <div className="hero-content">
-            <p className="eyebrow hero-eyebrow">Glorious Gospel Miracle Centre</p>
+            <p className="hero-church-name">Glorious Gospel Miracle Centre</p>
             <h1 id="welcome-heading">Rooted in the Word.<br />Sent to the nations.</h1>
             <p className="hero-intro">
               A home for true worship, where lives encounter the transforming power of Jesus

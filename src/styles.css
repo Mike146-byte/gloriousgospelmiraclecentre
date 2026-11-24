@@ -1253,3 +1253,34 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Big church name + events page */
+.brand-monogram { font-size: clamp(22px, 2.6vw, 34px); line-height: 1.05; }
+.hero-church-name {
+  font-family: var(--font-display);
+  font-size: clamp(34px, 6vw, 76px);
+  line-height: 1;
+  margin-bottom: 18px;
+  color: var(--church-deep-foreground);
+}
+.events-page { background: var(--church-ink); color: var(--church-deep-foreground); min-height: 100vh; }
+.events-header { position: relative; }
+.events-main { max-width: 900px; margin: 0 auto; padding: 56px 24px 96px; }
+.events-title { font-family: var(--font-display); font-size: clamp(40px, 7vw, 72px); margin: 8px 0 32px; }
+.events-list { display: grid; gap: 16px; }
+.events-empty { opacity: .75; }
+.event-card { position: relative; display: flex; gap: 20px; padding: 22px; border: 1px solid oklch(1 0 0 / 16%); border-radius: 18px; background: oklch(1 0 0 / 6%); }
+.event-date { display: grid; place-items: center; min-width: 72px; height: 72px; border-radius: 14px; background: var(--church-teal); color: var(--church-ink); font-size: 13px; text-transform: uppercase; font-weight: 600; }
+.event-date span { font-family: var(--font-display); font-size: 28px; line-height: 1; }
+.event-body h2 { font-family: var(--font-display); font-size: 24px; margin-bottom: 6px; }
+.event-body p { opacity: .85; margin-top: 4px; }
+.event-meta { display: flex; align-items: center; gap: 6px; font-size: 14px; }
+.event-meta svg { width: 16px; height: 16px; }
+.event-delete { position: absolute; top: 16px; right: 16px; opacity: .6; color: inherit; }
+.event-delete:hover { opacity: 1; }
+.events-admin { margin-top: 56px; }
+.events-form { display: grid; gap: 12px; padding: 24px; border-radius: 18px; background: var(--church-paper); color: var(--foreground); }
+.events-form h2 { font-family: var(--font-display); font-size: 26px; }
+.events-form-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.events-msg { margin-top: 12px; }
+@media (max-width: 700px) { .brand-monogram { font-size: 17px; } }
