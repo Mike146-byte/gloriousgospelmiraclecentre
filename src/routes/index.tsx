@@ -231,6 +231,10 @@ function HomePage() {
                   Serves Glorious Gospel Miracle Centre as its Host Pastor and ministers to the
                   congregation.
                 </p>
+                <p className="pastor-bio">
+                  <a href="tel:+254708110115">+254 708 110 115</a> ·{" "}
+                  <a href="mailto:vincentlukaliangoyi@gmail.com">vincentlukaliangoyi@gmail.com</a>
+                </p>
               </div>
               <div>
                 <span className="pastor-role">Pastor</span>
