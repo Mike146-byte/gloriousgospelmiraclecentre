@@ -3,4 +3,6 @@
 - [x] Add role-based pastor biographies using only confirmed church information.
 - [ ] Expand Rev. Vincent's biography with ministry, education, leadership, and authorship details from his CV.
 - [x] Add the church's story from its confirmed vision, mission, and faith foundation.
-- [ ] Add Pastor Mercy Vincent's ministry history and service areas when the church provides details.- [x] Make the church name big and add an events page where the church team posts events.
+- [ ] Add Pastor Mercy Vincent's ministry history and service areas when the church provides details.
+- [x] Make the church name big and add an events page where the church team posts events.
+- [x] Restrict event history and administrator role checks to appropriate visitors.

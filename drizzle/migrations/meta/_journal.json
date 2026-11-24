@@ -8,6 +8,13 @@
       "when": 1795537310846,
       "tag": "0000_events_and_roles",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1795538867089,
+      "tag": "0001_tighten_event_visibility_and_role_checks",
+      "breakpoints": true
     }
   ]
 }
