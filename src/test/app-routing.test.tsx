@@ -22,7 +22,7 @@ describe("App routing", () => {
 
   it("shows the supplied church location landmark", () => {
     expect(visitorDetails.location).toBe(
-      "Blue Ribbon, between Kiganjo Corner and Makongeni Kamenu",
+      "Blue Ribbon, opposite Jeffa House, Kiganjo – Blue Post, Thika",
     );
   });
 });

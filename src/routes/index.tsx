@@ -16,7 +16,7 @@ const scriptures = [
 
 export const visitorDetails = {
   serviceTime: "Sundays, 7:00 a.m.–1:00 p.m.",
-  location: "Blue Ribbon, between Kiganjo Corner and Makongeni Kamenu",
+  location: "Blue Ribbon, opposite Jeffa House, Kiganjo – Blue Post, Thika",
 };
 
 export const Route = createFileRoute("/")({
@@ -267,7 +267,7 @@ function HomePage() {
               </article>
               <a
                 className="directions-link"
-                href="https://www.google.com/maps/dir/?api=1&destination=Blue%20Ribbon%2C%20between%20Kiganjo%20Corner%20and%20Makongeni%20Kamenu"
+                href="https://www.google.com/maps/dir/?api=1&destination=Jeffa%20House%2C%20Kiganjo%2C%20Blue%20Post%2C%20Thika"
                 target="_blank"
                 rel="noreferrer"
               >
