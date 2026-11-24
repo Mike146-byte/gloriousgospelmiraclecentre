@@ -3,6 +3,7 @@ import { ArrowDown, ArrowUpRight, BookOpen, Clock3, Globe2, HeartHandshake, MapP
 
 import { Button } from "@/components/ui/button";
 import worshipGathering from "@/assets/worship-gathering.jpg";
+import kenyanWorship from "@/assets/kenyan-worship.jpg";
 import pastorsPortrait from "@/assets/pastors-vincent.jpg.asset.json";
 
 const scriptures = [
@@ -63,8 +64,8 @@ function HomePage() {
         <section className="home-hero" aria-labelledby="welcome-heading">
           <img
             className="hero-photo"
-            src={worshipGathering}
-            alt="A congregation gathered in worship beneath a cross"
+            src={kenyanWorship}
+            alt="Kenyan worshippers lifting their hands in praise"
             width={1600}
             height={1056}
             fetchPriority="high"
